@@ -1,121 +1,204 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato";
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  list-style: none;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 header {
-    height: 4em;
-    background: rgba(0, 0, 0, .75);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100vw;
+  height: 4em;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 #logo {
-    height: 40px;
+  height: 40px;
 }
-li {
-    display: inline-block;
-    padding-right: 1rem;
+.cabecario{
+  display: inline-block;
+  padding-right: 1rem;
 }
 #linha {
-    border-left: dashed 1px rgba(255, 255, 255);
-    padding: .6rem .8rem; 
+  border-left: dashed 1px rgba(255, 255, 255);
+  padding: 0.6rem 0.8rem;
 }
-.banner{
-    background-image: url("https://cotemig.com.br/static/banner/desktopimagefull-1650984096573.png");
-    height: 550px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    
+.banner {
+  background-image: url("https://cotemig.com.br/static/banner/desktopimagefull-1650984096573.png");
+  height: 550px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
 }
-.mar-lef{
-    margin-left: 250px;
+.mar-lef {
+  margin-left: 250px;
 }
-.banner h1{
-    font-size: 2.8rem;
+.banner h1 {
+  font-size: 2.8rem;
 }
-.banner p{
-    font-size: 1rem;
+.banner p {
+  font-size: 1rem;
 }
-#botao{
-    display: flex;
-    height: 27px;
-    width: 290px;
-    background-color: #40aa0b;
-    border-radius: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    cursor: pointer;
-    padding-top: 14px;
-    justify-content: center;
+#botao {
+  display: flex;
+  height: 27px;
+  width: 290px;
+  background-color: #40aa0b;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 14px;
+  justify-content: center;
 }
-.texto{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
+.texto {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
 }
-#ima {
-     width: 24%;
+.img {
+  width: 24%;
+  border-radius: 8px;
+  overflow: hidden;
 }
-
-#ima img {
-    max-width: 100%;
-    height: 175px;
-    border-radius: 8px; 
-    object-fit: cover;  
+.img img {
+  max-width: 100%;
+  height: 175px;
+  object-fit: cover;
 }
-
-#alinhamento{
-    width: 1170px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    color: white;
+#alinhamento {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  color: white;
 }
-
 h3 {
-    margin-top: -50px;
-    font-family: Arial, Helvetica, sans-serif;
+  margin-top: -50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.conteudo{
+.conteudo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  text-align: left;
+  border-top-left-radius: 23px;
+  border-top-width: 23px;
+  box-shadow: 5px 5px 5px whitesmoke;
+  width: 284px;
+  color: black;
+}
+.conteudo img {
+  max-height: 59px;
+  max-width: 59px;
+  border-radius: 8px;
+}
+h3 {
+  display: flex;
+  align-items: flex-end;
+  height: 100px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin-top: -113px;
+}
+.localizacao {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.localizacao > div {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.localizacao > div > h4 {
+  font-size: 20px;
+  color: #424242;
+}
+.localizacao > div > p {
+  font-size: 16px;
+  color: #424242;
+  margin: 10px;
+}
+.telefone {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 35px;
+  color: #40aa0b;
+}
+.noticias {
+  width: 80vw;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.noticias > div > p {
+  color: white;
+}
+#documentos {
+  background-image: url("https://cotemig.com.br/static/blog/mobileimagefull-1653342958410.png");
+  background-size: cover;
+  margin: 10px;
+  border-radius: 10px;
+  width: 18%;
+}
+#confira {
+  background-image: url("https://cotemig.com.br/static/blog/mobileimagefull-1651240942557.png");
+  background-size: cover;
+  margin: 10px;
+  border-radius: 10px;
+  width: 18%;
+}
+#cotemig {
+  background-image: url("https://cotemig.com.br/static/blog/mobileimagefull-1647277290170.jpg");
+  background-size: cover;
+  margin: 10px;
+  border-radius: 10px;
+  width: 18%;
+}
+#connect {
+  background-image: url("	https://cotemig.com.br/static/blog/mobileimagefull-1641562463686.png");
+  background-size: cover;
+  margin: 10px;
+  border-radius: 10px;
+  width: 18%;
+}
+.novidades {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: black;
+}
+.rodape{
+    padding: 2.5em 1em 2em;
     display: flex;
     align-items: center;
-    height: 80px;
-    text-align: left;
-    background-color: rgb(158, 152, 152);
-    width: 284px;
-    border-radius: 8px;
-    color: black;
-
+    justify-content: space-around; 
+    background-color: black;
+    color: white; 
 }
-
-.conteudo img{
-    max-height: 59px;
-    max-width: 59px;
-}
-
-.foto1ensinotecnico
-{
-    margin-left: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 7px;
-}
-
-.tituloblococolegio
-{
-    margin-left: 10px;
-    margin-top: -80px;
-    margin-bottom: 30px;
+.rodapeul{
+  display: inline-flex;
 }
